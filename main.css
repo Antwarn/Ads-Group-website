@@ -44,9 +44,20 @@ body {
     font-size: 18px;
 }
 
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
 .coming h1 {
     font-size: 100px;
-    background: linear-gradient(45deg, blue, red);
+    background: linear-gradient(45deg, rgb(66, 66, 255), red);
     -webkit-background-clip: text; /* Webkit/Blink browsers */
     background-clip: text;
     color: transparent; /* Hide the original text color */
@@ -107,6 +118,8 @@ body {
     }
     
     .logo img {
+        position: relative;
+        left: -1vh;
         width: 80px;
     }
 
@@ -129,14 +142,15 @@ body {
     }
 
     .email {
-        width: 100%; /* Center the input horizontally on mobile screens */
+        width: 300px; /* Center the input horizontally on mobile screens */
         max-width: 100%; /* Allow it to take full width on mobile */
-        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
     }
 
     .submit {
+        position: absolute;
         top: 10%;
-        right: 5%;
     }
 
     .coming p {
