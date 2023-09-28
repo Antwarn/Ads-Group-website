@@ -1,0 +1,134 @@
+/* Reset some default browser styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    text-align: center;
+}
+
+/* Style the header */
+.header {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the navigation */
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.coming h1 {
+    font-size: 100px;
+    background: linear-gradient(45deg, blue, red);
+    -webkit-background-clip: text; /* Webkit/Blink browsers */
+    background-clip: text;
+    color: transparent; /* Hide the original text color */
+}
+
+/* Style the form container */
+.coming-form {
+    position: relative;
+    display: inline-block; /* Ensure it wraps its contents without taking full width */
+    /*border: 1px red dashed;*/
+}
+
+.email {
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    width: 75%; /* Updated for better responsiveness */
+    max-width: 300px; /* Added a maximum width */
+    height: 5vh;
+    background-color: #222222;
+    margin: 0 auto; /* Center the input horizontally on smaller screens */
+    display: block; /* Ensure it takes full width on smaller screens */
+    color: #75757575;
+}
+
+.submit {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+}
+
+.coming p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .logo img {
+        width: 80px;
+    }
+
+    .nav {
+        margin-top: 20px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .coming h1 {
+        font-size: 60px;
+    }
+
+    .email {
+        width: 90%; /* Center the input horizontally on mobile screens */
+        max-width: 100%; /* Allow it to take full width on mobile */
+    }
+
+    .submit {
+        top: 10%;
+        right: 5%;
+    }
+
+    .coming p {
+        font-size: 14px;
+    }
+}
