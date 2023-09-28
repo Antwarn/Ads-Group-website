@@ -129,8 +129,9 @@ body {
     }
 
     .email {
-        width: 90%; /* Center the input horizontally on mobile screens */
+        width: 100%; /* Center the input horizontally on mobile screens */
         max-width: 100%; /* Allow it to take full width on mobile */
+        margin: 0 auto;
     }
 
     .submit {
