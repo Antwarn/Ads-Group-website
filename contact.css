@@ -1,0 +1,141 @@
+/* Reset some default browser styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    text-align: center;
+}
+
+/* Style the header */
+.header {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the navigation */
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+.contact-container {
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    width: 50vh;
+    max-width: 500px;
+    height: 5vh;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #222222;
+    display: block; /* Ensure it takes full width on smaller screens */
+    color: white;
+}
+
+.email {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    width: 50vh;
+    max-width: 500px;
+    height: 5vh;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #222222;
+    display: block; /* Ensure it takes full width on smaller screens */
+    color: white;
+}
+
+.besked {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    width: 50vh;
+    max-width: 500px;
+    height: 20vh;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #222222;
+    display: block; /* Ensure it takes full width on smaller screens */
+    color: white;
+}
+
+.name:focus {
+    outline: none;
+}
+
+.email:focus {
+    outline: none;
+}
+
+.besked:focus {
+    outline: none;
+}
+
+.send {
+    position: relative;
+    left: 30%;
+    margin-bottom: 10px;
+    width: 20vh;
+    max-width: 200px;
+    height: 6vh;
+    border: none;
+    border-radius: 5px;
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    color: white;
+    cursor: pointer;
+  }

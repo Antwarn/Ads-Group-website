@@ -1,3 +1,9 @@
+const contactButton = document.getElementsByClassName("home");
+
+contactButton.addEventListener("click", function() {
+  window.location.href = './nav-bar/contact/contact.html'
+});
+
 // script.js
 const db = firebase.firestore();
 const emailForm = document.getElementById('emailForm');

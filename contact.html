@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soundpower</title>
     <link rel="icon" href="./Soundpower logo/ADS-Group-icon.png">
-    <link rel="stylesheet" href="main.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
@@ -24,27 +24,15 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
-    </div>
-    <div class="coming">
-        <h1><span class="auto-type"></span></h1>
-        <div class="coming-form">
-            <input type="email" placeholder="Please enter your email address" class="email" autocomplete="email">
-            <button type="submit" class="submit">
-                <img src="./Soundpower logo/paper-plane-50.png">
-            </button>
-            </input>
+        <div class="contact-container">
+            <p>Full Name<span style="color: red;">*</span></p>
+            <input type="name" placeholder="" class="name" autocomplete="name">
+            <p>Email<span style="color: red;">*</span></p>
+            <input type="email" placeholder="" class="email" autocomplete="email">
+            <p>Message<span style="color: red;">*</span></p>
+            <input type="text" placeholder="" class="besked" autocomplete="none">
+            <input type="button" value="Submit" class="send">
         </div>
-        <p>Notify me when Soundpower launches</p>
-    </div>    
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["Coming Summer 2024"], 
-            typeSpeed: 100
-        })
-
-    </script>
+    </div>
 </body>
 </html>
